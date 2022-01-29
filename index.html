@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mapa Mercadores</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="leaflet.css">
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+			<div class="header-menu">
+				<div class="title">Mapa<span>Mercadores</span></div>
+				<div class="sidebar-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+				<ul>
+					<li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+					<li> <a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+					<li> <a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="sidebar">
+			<div class="sidebar-menu">
+				<center class="profile">
+					<img src="logo.png">
+				</center>
+				<li class="item" id="AnoViagem">
+					<a href="#AnoViagem" class="menu-btn">
+						<i class="fa-regular fa-folder-open"></i><span>Ano <i class="fas fa-chevron-down drop-down"></i></span>
+					</a>
+					<div class="sub-menu">
+						<a href="#"><i class="fa-solid fa-computer-mouse"></i><span>1450</span></a>
+						<a href="#"><i class="fa-solid fa-computer-mouse"></i><span>1451</span></a>
+						<a href="#"><i class="fa-solid fa-computer-mouse"></i><span>1452</span></a>
+					</div>
+				</li>
+				<li class="item" id="TipoMercadoria">
+					<a href="#TipoMercadoria" class="menu-btn">
+						<i class="fa-regular fa-folder-open"></i><span>Mercadoria <i class="fas fa-chevron-down drop-down"></i></span>
+					</a>
+					<div class="sub-menu">
+						<a href="#"><i class="fa-solid fa-computer-mouse"></i><span>Seda</span></a>
+						<a href="#"><i class="fa-solid fa-computer-mouse"></i><span>Couros</span></a>
+						<a href="#"><i class="fa-solid fa-computer-mouse"></i><span>Lã</span></a>
+					</div>
+				</li>
+				<li class="item" id="TipoEmbarcacao">
+					<a href="#TipoEmbarcacao" class="menu-btn">
+						<i class="fa-regular fa-folder-open"></i><span>Embarcação <i class="fas fa-chevron-down drop-down"></i></span>
+					</a>
+					<div class="sub-menu">
+						<a href="#"><i class="fa-solid fa-computer-mouse"></i><span>Nave</span></a>
+						<a href="#"><i class="fa-solid fa-computer-mouse"></i><span>Galé</span></a>
+						<a href="#"><i class="fa-solid fa-computer-mouse"></i><span>Nau</span></a>
+					</div>
+				</li>
+				<li class="item" id="NomeNavegador">
+					<a href="#NomeNavegador" class="menu-btn">
+						<i class="fa-regular fa-folder-open"></i><span>Embarcação <i class="fas fa-chevron-down drop-down"></i></span>
+					</a>
+					<div class="sub-menu">
+						<a href="#"><i class="fa-solid fa-computer-mouse"></i><span>Lopo Eanes</span></a>
+					</div>
+				</li>
+			</div>
+		</div>
+		<div id ="map"class="main-container"></div>
+	</div>
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
